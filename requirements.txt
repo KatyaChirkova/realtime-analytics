@@ -1,0 +1,6 @@
+psycopg[binary]>=3.2,<4
+python-dotenv>=1.1,<2
+pandas>=2.2,<4
+streamlit>=1.40,<2
+plotly>=5,<7
+pytest>=8,<9

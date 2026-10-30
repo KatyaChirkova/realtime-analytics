@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:17
+    container_name: library-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: library_analytics
+      POSTGRES_USER: library_user
+      POSTGRES_PASSWORD: library_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - library_pgdata:/var/lib/postgresql/data
+
+volumes:
+  library_pgdata:
